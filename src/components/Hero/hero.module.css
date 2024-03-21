@@ -1,0 +1,17 @@
+.bg_dark::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+/*mb-4 bg-center bg-cover h-screen w-full flex justify-center items-center text-center*/
+
+.bg_img {
+    @apply inset-x-0 top-0 absolute -z-20 bg-hero-image bg-blend-darken bg-no-repeat bg-center bg-cover h-screen w-full
+}

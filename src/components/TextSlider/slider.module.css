@@ -1,0 +1,11 @@
+.slider_section {
+    @apply bg-white py-24 text-center relative overflow-hidden
+}
+
+.slider {
+    @apply relative whitespace-nowrap flex items-center
+}
+
+.text {
+    @apply text-6xl font-bold relative m-0 mr-2
+}

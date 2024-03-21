@@ -1,0 +1,7 @@
+.logo {
+    @apply text-text-light dark:text-text-dark flex items-center space-x-3 rtl:space-x-reverse
+}
+
+.logo_text {
+    @apply self-center text-2xl font-semibold whitespace-nowrap dark:text-white
+}

@@ -1,0 +1,7 @@
+.primary {
+    @apply bg-primary-light hover:bg-primary-light focus:ring-primary-light dark:bg-primary-dark dark:hover:bg-primary-dark dark:focus:ring-primary-dark
+}
+
+.secondary {
+    @apply bg-secondary-light hover:bg-secondary-light focus:ring-secondary-light dark:bg-secondary-dark dark:hover:bg-secondary-dark dark:focus:ring-secondary-dark
+}

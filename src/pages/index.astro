@@ -1,0 +1,109 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+// Sections of the landing page
+import Navbar from '../components/Navbar/Navbar.tsx';
+import Hero from "../components/Hero/Hero";
+import OurMission from "../components/OurMission/OurMission.astro";
+import Inspiration from "../components/Inspiration/Inspiration.astro";
+import DecorativeSlider from "../components/DecorativeSlider/DecorativeSlider";
+import Events from "../components/Events/Events.astro";
+import Team from "../components/Team/Team.astro";
+import VideoPlayer from "../components/VideoPlayer/VideoPlayer";
+import Join from "../components/Join/Join.astro";
+import EducationalRes from "../components/EducationalRes/EducationalRes.astro";
+import TextSlider from "../components/TextSlider/TextSlider";
+import CoinsImg from "../components/CoinsImg/CoinsImg";
+import FAQ from "../components/FAQ/FAQ.astro";
+import Trends from "../components/Trends/Trends.astro";
+import Collaborate from "../components/Collaborate/Collaborate.astro";
+import Quote from "../components/Quote/Quote.astro";
+import Collection from "../components/Collection/Collection.astro";
+import ContactForm from "../components/ContactForm/ContactForm.astro";
+import Contacts from "../components/Contacts/Contacts.astro";
+
+const imagesSet1 = [
+	"/images/photo-1651221436727-28b9c922db97.png",
+	"/images/photo-1653634222025-5658e12782c9.jpeg",
+	"/images/photo-1642388691919-231d16e51e7f.jpeg",
+	"/images/photo-1644361566696-3d442b5b482a.jpeg",
+];
+
+const imagesSet2 = [
+	"/images/photo-1642388889330-3cac79b6111d.jpeg",
+	"/images/photo-1645731504684-0f6f9b73f8bb.jpeg",
+	"/images/photo-1660050913083-5514bb379e78.jpeg"
+]
+
+---
+
+<Layout title="Welcome to Astro.">
+
+	<header>
+		<Navbar client:load/>
+	</header>
+
+	<main>
+
+		<Hero client:load/>
+
+		<div class="z-20">
+			<OurMission/>
+
+			<DecorativeSlider heading="Navigate NFTropolis with Ease" images={imagesSet1} client:load/>
+
+			<Inspiration/>
+
+			<DecorativeSlider heading="Discover Diverse NFT Collections" images={imagesSet2} client:load/>
+
+			<Events/>
+
+			<Team/>
+
+			<VideoPlayer/>
+
+			<Join/>
+
+			<EducationalRes/>
+
+			<TextSlider client:load/>
+		</div>
+
+		<CoinsImg client:load/>
+
+		<div class="z-20">
+			<FAQ/>
+
+			<Trends/>
+
+			<Collaborate/>
+
+			<Quote/>
+
+			<Collection/>
+
+			<ContactForm/>
+
+			<Contacts/>
+		</div>
+
+	</main>
+
+	<footer class="bg-black text-white text-center p-10">
+		<p class="text-xl">© 2024 NFTropolis. All Rights Reserved.</p>
+	</footer>
+
+</Layout>
+<style>
+	.dark-bg::after {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+
+		background-color: rgba(0, 0, 0, 0.35);
+	}
+</style>

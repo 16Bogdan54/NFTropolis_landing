@@ -1,0 +1,24 @@
+---
+import Button from "../Button/Button";
+---
+
+<section class="text-text-light dark:text-text-dark container mx-auto p-6 lg:w-1/3">
+    <h2 class="text-center text-6xl font-bold mb-4">Connect with Us Today</h2>
+    <form class="text-center">
+        <div class="grid gap-6 mb-6 md:grid-cols-2">
+            <label>
+                <input class="bg-gray-50 border border-gray-300 text-gray-900 text-lg rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" name="name" type="text" placeholder="Name" required />
+            </label>
+            <label>
+                <input class="bg-gray-50 border border-gray-300 text-gray-900 text-lg rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" name="email" type="email" placeholder="Email" required />
+            </label>
+        </div>
+        <label>
+            <input class="mb-6 bg-gray-50 border border-gray-300 text-gray-900 text-lg rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"  name="phone" type="tel" placeholder="Phone" required />
+        </label>
+        <label >
+            <textarea class="mb-6 block p-2.5 w-full text-lg text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" name="message" placeholder="Message" cols="30" rows="3"/>
+        </label>
+        <Button variant="primary" text="Submit"/>
+    </form>
+</section>

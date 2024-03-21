@@ -1,0 +1,43 @@
+.inspiration_card {
+    @apply bg-white p-8 rounded-3xl text-center flex flex-col justify-center items-center
+}
+
+.event_card {
+    @apply rounded-3xl text-start  aspect-auto w-full h-full
+}
+
+.member_card {
+    @apply rounded-3xl text-center  aspect-auto w-full h-full
+}
+
+.collab_card {
+    @apply bg-white rounded-3xl text-center p-6 mb-4 border-2 border-gray-400 dark:border-gray-200
+}
+
+.collection_card {
+    @apply rounded-3xl text-start  aspect-auto w-full h-full bg-white
+}
+
+.contact_card {
+  @apply text-start bg-white p-6 rounded-3xl border-2 border-gray-400 dark:border-gray-200
+}
+
+.img_inspiration {}
+
+.img_big {
+    @apply rounded-3xl object-cover object-center w-full h-96 mb-4
+}
+
+.img_small {
+    @apply rounded-full w-24 h-24 object-center
+}
+
+.heading {
+    @apply text-3xl font-bold
+}
+
+.subheading {}
+
+.paragraph {
+    @apply text-lg
+}
