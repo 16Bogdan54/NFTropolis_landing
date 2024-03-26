@@ -5,7 +5,7 @@ interface IHeadingProps extends HTMLProps<HTMLHeadingElement> {
 }
 
 const Heading = ({ text }: IHeadingProps) => {
-  return <h2 className="text-4xl md:text-6xl font-bold mb-4">{text}</h2>;
+  return <h2 className="text-4xl lg:text-6xl font-bold mb-4">{text}</h2>;
 };
 
 export default Heading;
