@@ -9,7 +9,7 @@ const Accordion = ({ heading, body }: IAccordion) => {
   const id = useId().replaceAll(":", "");
   return (
     <div
-      className="bg-white dark:bg-background-dark dark:text-text-dark mb-4 w-full md:w-2/3 "
+      className="bg-white dark:bg-background-dark dark:text-text-dark mb-4 w-full lg:w-2/3 "
       id={`accordion-collapse-${id}`}
       data-accordion="collapse"
     >
