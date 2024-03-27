@@ -29,7 +29,7 @@ const DecorativeSlider = ({ heading, images }: ISlider) => {
   return (
     <section
       ref={ref}
-      className={`bg-white dark:bg-background-dark text-text-light dark:text-text-dark ${slider_section}`}
+      className={`text-center bg-white dark:bg-background-dark text-text-light dark:text-text-dark ${slider_section}`}
     >
       <Heading text={heading} />
       <motion.div style={{ x }} className={slider_motion}>
